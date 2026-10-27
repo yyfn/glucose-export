@@ -1,0 +1,27 @@
+{
+  "name": "glucose-export",
+  "version": "1.0.0",
+  "description": "在 iPhone 本地读取 HealthKit 血糖记录并导出 JSON 文件。",
+  "license": "MIT",
+  "private": true,
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start --dev-client",
+    "ios": "expo run:ios --device",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@kingstinct/react-native-healthkit": "16.2.0",
+    "expo": "~54.0.36",
+    "expo-dev-client": "~6.0.21",
+    "expo-file-system": "~19.0.24",
+    "expo-sharing": "~14.0.8",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-nitro-modules": "0.35.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.1.0",
+    "typescript": "~5.9.2"
+  }
+}

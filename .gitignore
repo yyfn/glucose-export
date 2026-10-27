@@ -1,0 +1,19 @@
+# 依赖、Expo 缓存与生成的原生工程
+node_modules/
+.expo/
+dist/
+ios/
+
+# 本机环境配置、签名文件与安装包
+.env
+.env.*
+*.p12
+*.mobileprovision
+*.ipa
+
+# App 导出的个人血糖记录
+blood-glucose-*.json
+
+# 日志与 macOS 文件
+*.log
+.DS_Store

@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "血糖导出",
+    "slug": "glucose-export",
+    "version": "1.0.0",
+    "scheme": "glucose-export",
+    "platforms": ["ios"],
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": {
+      "bundleIdentifier": "com.example.glucoseexport",
+      "buildNumber": "2",
+      "supportsTablet": false,
+      "infoPlist": {
+        "UIApplicationSceneManifest": {
+          "UIApplicationSupportsMultipleScenes": false,
+          "UISceneConfigurations": {
+            "UIWindowSceneSessionRoleApplication": [
+              {
+                "UISceneConfigurationName": "Default Configuration",
+                "UISceneDelegateClassName": "$(PRODUCT_MODULE_NAME).SceneDelegate"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "plugins": [
+      [
+        "@kingstinct/react-native-healthkit",
+        {
+          "NSHealthShareUsageDescription": "读取“健康”中的全部血糖记录，并按你的操作导出为 JSON 文件。",
+          "NSHealthUpdateUsageDescription": false,
+          "background": false
+        }
+      ],
+      "./plugins/with-ios-scene.cjs"
+    ]
+  }
+}
